@@ -140,7 +140,7 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .judul h1 {
     padding: 0;
     font-size: 8rem;
