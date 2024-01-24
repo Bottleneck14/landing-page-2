@@ -25,3 +25,22 @@ scrollTombol.addEventListener("click", function () {
 });
 
 // _____________________________________________________________________________________________________
+const tombol = document.querySelectorAll(".select");
+const hovering = document.querySelectorAll(".keterangan");
+
+tombol.forEach((a, b) => {
+  a.addEventListener("mouseenter", function () {
+    hovering.forEach((c, d) => {
+      if (b === d) {
+        c.classList.add("keterangan-hover");
+      } else {
+        c.classList.remove("keterangan-hover");
+      }
+    });
+  });
+  a.addEventListener("mouseleave", function () {
+    hovering.forEach((hovering) => {
+      hovering.classList.remove("keterangan-hover");
+    });
+  });
+});
