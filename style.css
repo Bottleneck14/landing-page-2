@@ -145,10 +145,17 @@ body {
     padding: 0;
     font-size: 8rem;
   }
+  .judul {
+    padding-left: 10px;
+  }
   .pilihan-tombol {
-    height: 10vh;
+    height: 12vh;
     overflow: auto;
     align-items: flex-start;
+    overflow: hidden;
+  }
+  .pilihan-tombol span {
+    display: none;
   }
   .bawah-pilihan {
     overflow-x: scroll;
@@ -160,5 +167,9 @@ body {
     margin: 20px 0;
     width: 90%;
     height: 70vh;
+  }
+  #bawah p {
+    text-align: center;
+    padding: 0 10px;
   }
 }
